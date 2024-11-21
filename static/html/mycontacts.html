@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>My Contacts</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="/img/amIcon.jpg" type="image/jpg">
+  <link rel="stylesheet" href="/css/stylesMyContacts.css">
+  <script src="/js/scriptMyContacts.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDA5p8w5AR25nAu7LumsIdxMUemAIUZBM&callback=initMap&libraries=&v=weekly"
+    async defer></script>
+</head>
+
+<body>
+  <nav>
+    <ul class="topnav">
+      <li class="navitem"><img src="/img/amIcon.jpg" alt="AM Album Cover Icon" width="50em" height="50em" id="icon">
+      </li>
+      <li class="navitem"><a href="mycontacts.html">My Contacts</a></li>
+      <li class="navitem"><a href="add-contact.html">Add Contact</a></li>
+      <li class="navitem"><a href="added-contacts.html">Added Contacts</a></li>
+      <li class="navitem"><a href="aboutme.html">About Me</a></li>
+    </ul>
+  </nav>
+  <h1>My Contacts</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name (Person or Organization)</th>
+        <th>Location/Address of Contact</th>
+        <th>Information About the Contact (Description/Relationship)</th>
+        <th>Email Address</th>
+        <th>URL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="names">Dan Challou</td>
+        <td class="locations">Kenneth H. Keller Hall, 200 Union St SE, Minneapolis, MN 55455</td>
+        <td>Internet Programming (CSCI4131) professor.</td>
+        <td>chal0006@umn.edu</td>
+        <td><a href="https://cse.umn.edu/cs/dan-challou">https://cse.umn.edu/cs/dan-challou</a></td>
+      </tr>
+      <tr>
+        <td class="names">Nick Hopper</td>
+        <td class="locations">Kenneth H. Keller Hall, 200 Union St SE, Minneapolis, MN 55455</td>
+        <td>Development of Secure Software Systems (CSCI 4271W) professor.</td>
+        <td>hoppernj@umn.edu</td>
+        <td><a href="https://cse.umn.edu/cs/nick-hopper">https://cse.umn.edu/cs/nick-hopper</a></td>
+      </tr>
+      <tr>
+        <td class="names">Stephen A McCamant</td>
+        <td class="locations">Kenneth H. Keller Hall, 200 Union St SE, Minneapolis, MN 55455</td>
+        <td>Introduction to Computer Security (CSCI 5271) professor.</td>
+        <td>smccaman@umn.edu</td>
+        <td><a href="https://cse.umn.edu/cs/stephen-mccamant">https://cse.umn.edu/cs/stephen-mccamant</a></td>
+      </tr>
+      <tr>
+        <td class="names">Jacquelyn E Burt</td>
+        <td class="locations">Kenneth H. Keller Hall, 200 Union St SE, Minneapolis, MN 55455</td>
+        <td>CSE Computer Science advisor.</td>
+        <td>ruppx077@umn.edu</td>
+        <td><a
+            href="https://cse.umn.edu/cs/meet-our-advisors-jacquelyn-burt">https://cse.umn.edu/cs/meet-our-advisors-jacquelyn-burt</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="names">GopherHack</td>
+        <td class="locations">Kenneth H. Keller Hall, 200 Union St SE, Minneapolis, MN 55455</td>
+        <td>GopherHack is a student organization at the University of Minnesota focused on learning hands-on offensive
+          cybersecurity through capture-the-flag (CTF) competitions.</td>
+        <td>hack@umn.edu</td>
+        <td><a href="https://gopherhack.com">https://gopherhack.com</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="mapContainer">
+    <div id="map"></div>
+    <div id="inputArea">
+      <form id="destinationForm">
+        <h2>Enter a Destination</h2>
+        <input type="text" id="locationInput" placeholder="University of Minnesota" required>
+        <p>Select a travel mode:</p>
+        <label>
+          <input type="radio" name="options" value="driving" required checked>
+          DRIVING
+        </label><br>
+        <label>
+          <input type="radio" name="options" value="walking">
+          WALKING
+        </label><br>
+        <label>
+          <input type="radio" name="options" value="transit">
+          TRANSIT
+        </label><br>
+        <button type="submit">Go</button>
+      </form>
+    </div>
+  </div>
+  <script src="/js/scriptMyContacts.js"></script>
+</body>
+
+</html>
